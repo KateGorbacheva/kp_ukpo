@@ -6,7 +6,7 @@ add_subdirectory(gtest)
 
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-add_executable(test test.cpp)
+add_executable(test main.cpp)
 
 target_link_libraries(test gtest gtest_main)
 target_link_libraries(test pthread)
